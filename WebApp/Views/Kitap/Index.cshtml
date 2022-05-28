@@ -1,7 +1,15 @@
-﻿
+﻿@model IEnumerable<WebApp.Models.Kitap>
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
 
+@foreach (Kitap kitap in Model)
+{
+     @kitap.KitapAdi <br />
+     @kitap.KapakResmi <br />
+     @kitap.Fiyat <br />
+     @kitap.TavsiyeSayisi <br />
+     @kitap.YazarID
+}
