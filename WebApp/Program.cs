@@ -23,6 +23,15 @@ namespace WebApp
                     webBuilder.UseStartup<Startup>();
                 });
 
-        //deneme yazısı
+        //deneme yazısı    
+        //deneme yazısı    
+        //deneme yazısı    
+        //deneme yazısı    
+        //deneme yazısı    
+        //deneme yazısı    
+        //deneme yazısı    
+        //deneme yazısı    
+        //deneme yazısı    
+        //deneme yazısı    
     }
 }
