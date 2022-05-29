@@ -24,14 +24,7 @@ namespace WebApp
                 });
 
         //deneme yazısı    
-        //deneme yazısı    
-        //deneme yazısı    
-        //deneme yazısı    
-        //deneme yazısı    
-        //deneme yazısı    
-        //deneme yazısı    
-        //deneme yazısı    
-        //deneme yazısı    
-        //deneme yazısı    
+
+
     }
 }
