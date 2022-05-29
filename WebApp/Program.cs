@@ -23,7 +23,9 @@ namespace WebApp
                     webBuilder.UseStartup<Startup>();
                 });
 
-        //deneme yazýsý    
+        //deneme yazýsý 
+        //deneme yazýsý 
+        //deneme yazýsý (benim pcden gelen)
 
 
     }
