@@ -91,7 +91,7 @@ namespace WebApp
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Kitap}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

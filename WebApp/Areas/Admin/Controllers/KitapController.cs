@@ -77,8 +77,6 @@ namespace WebApp.Areas.Admin.Controllers
                 kitap.KapakResmi = dosyaAdi;
 
 
-
-
                 _context.Add(kitap);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

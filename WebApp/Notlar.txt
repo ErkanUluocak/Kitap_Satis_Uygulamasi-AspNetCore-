@@ -29,3 +29,15 @@ Problems
 *Uye girisi...
 *Admin yapma...(1-1)
 *Register...
+
+
+
+
+---29.05.2022 Pazar
+
+-Kitap index sayfasında grid tasarımını uyguladık.
+
+-Yazar adının gelmesi için include yazdık.
+-return View(_db.Kitaplar.Include("Yazar").ToList());
+
+

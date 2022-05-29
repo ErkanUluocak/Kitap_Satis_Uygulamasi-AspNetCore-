@@ -3,13 +3,60 @@
     ViewData["Title"] = "Index";
 }
 
+
+<style>
+    .galeri {
+        display: grid;
+        grid-template-columns: 220px 220px 220px 220px;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }
+
+        .galeri div {
+            width: 200px;
+            height: 300px;
+            padding: 8px;
+            background-color: lightgray;
+            border: 1px solid #42798f;
+            align-content: center;
+        }
+
+            .galeri div:hover {
+                background-color: snow;
+                border: 1px solid black;
+            }
+
+             .sepet {
+                color: darkblue;
+                font-family: Verdana;
+                font-size: 20px;
+                
+                
+            }
+</style>
+
 <h1>Index</h1>
 
-@foreach (Kitap kitap in Model)
-{
-     @kitap.KitapAdi <br />
-     @kitap.KapakResmi <br />
-     @kitap.Fiyat <br />
-     @kitap.TavsiyeSayisi <br />
-     @kitap.YazarID
-}
+<div class="galeri text-center">
+
+    @foreach (Kitap kitap in Model)
+    {
+    <div>
+        <a asp-controller="Kitap" asp-action="Detay" asp-route-id="@kitap.KitapID">
+            <img src="~/KapakResimleri//@kitap.KapakResmi" width="100px" height="160px" /> <br />
+            @kitap.KitapAdi <br />
+            @kitap.Yazar.YazarAdi <br />
+            @kitap.Fiyat <br />
+            @*@kitap.TavsiyeSayisi <br />*@
+
+        </a>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a class="sepet" asp-area="Uyeler" asp-controller="Panel" asp-action="SepeteEkle" asp-route-id="@kitap.KitapID">Sepete Ekle</a>
+        }
+
+
+    </div>
+    }
+</div>
+
